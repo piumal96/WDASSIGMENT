@@ -1,0 +1,249 @@
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    background: #FFF;
+    width: 900PX;
+    height: 600px;
+    border-radius: 16PX;
+    box-shadow: 0 0 128PX 0 rgba(0, 0, 0,0.1),
+    0 32PX 64PX -48PX rgba(0, 0, 0, 0.5);
+}
+.wrapperlog{
+    background: #FFF;
+    width: 450PX;
+    height: 500px;
+    border-radius: 16PX;
+    box-shadow: 0 0 128PX 0 rgba(0, 0, 0,0.1),
+    0 32PX 64PX -48PX rgba(0, 0, 0, 0.5);
+}
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+.form form .topic{
+    margin-bottom: 10px;
+outline: none;
+color: blue;
+text-align: center;
+}
+
+.btn-home{
+    background-color: #000000;
+    padding: 3%;
+    width: auto;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 275px;
+       border: 1px solid #f5c6cb;
+ display: inline-block;
+ 
+
+}
+.btn-login
+{
+    background-color: #000000;
+    padding: 7%;
+    width: auto;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+   
+       border: 1px solid #f5c6cb;
+ display: inline-block;
+}
+.footer{
+    background-color: #ff4757;
+    color: white;
+    text-align: center;
+
+}
+.form form .input input{
+    height: 40px;
+    width: 40%;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: #333;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+.text-center{
+    text-align: center;
+}
+.menu{
+    border-bottom: 1px solid gray;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff6b81;
+}
+.menu ul li a:hover{
+    color: #ff4757;
+}
+.wrapperadmin{
+    background: #FFF;
+    width: 90%;
+    height: 80%;
+    border-radius: 16PX;
+    box-shadow: 0 0 128PX 0 rgba(0, 0, 0,0.1),
+    0 32PX 64PX -48PX rgba(0, 0, 0, 0.5);
+}
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #3742fa;
+}
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+    margin-top: 3%;
+}
+.tbl-30 tr td input[type="text"]{
+    height: 40px;
+    width: 150%;
+    font-size: 16px;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.tbl-30 tr td input[type="file"]{
+    height: 40px;
+   width: 100%;
+    font-size: 16px;
+    padding: 1%;
+}
+
+
+
+.tbl-30 tr td input[type="submit"]
+{
+    height: 40px;
+   width: 137.5%;
+   margin-top: 5%;
+   font-size: 16px;
+   padding: 1%;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+
+.tbl-30 tr td textarea
+{
+   
+    width: 150%;
+    font-size: 16px;
+    padding: 1%;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+   border-radius: 5px;
+  
+}
+.tbl-30 tr td label{
+  
+    font-size: 16px;
+    padding: 1%;
+  
+    
+}
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #2ed573;
+}
+.wrappera{
+  
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+.error{
+    color: #ff4757;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    
+}
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757;
+}

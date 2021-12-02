@@ -1,0 +1,99 @@
+<?php
+require "./private/constant.php";
+require "./autho.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./private/css/style.css">
+</head>
+<body>
+<div class="menu text-center">
+    
+    <div class="wrapperadmin">
+      <ul>
+          
+          <li><a href="./logout.php">Logout</a></li>
+      </ul>
+    </div>
+ </div>
+ 
+ <div class="main-content">
+    <div class="wrapper">
+        <h1>Notes</h1>
+        <br /><br />
+
+  
+        <br><br><br>
+    
+       
+        <table class="tbl-full">
+            <tr>
+                <th>S.N.</th>
+                <th>Title</th>
+                <th>Discription</th>
+                <th>File</th>
+              
+            </tr>
+            <?php
+$sql="SELECT * FROM note";
+
+$res = mysqli_query($conn,$sql);
+
+if($res==true){
+ 
+    $count = mysqli_num_rows($res);
+    $sn=1; 
+ 
+    if($count>0)
+    {
+       
+        while($rows=mysqli_fetch_assoc($res))
+        {
+
+            $id=$rows['Sn'];
+            $title=$rows['title'];
+            $discrip=$rows['discription'];
+            $filename=$rows['filename'];
+
+            ?>
+            <tr>
+              
+                <th><?php echo $sn++?></th>
+                <th><?php echo $title?></th>
+                <th><?php echo $discrip?></th>
+                <th><a href="../notes/<?php echo $filename?>">Download</a></th>
+                
+             
+             
+            </tr>
+            
+            <?php
+        }
+    }
+    else
+    {
+        ?>
+        <tr>
+            <td colspan="4"><Div class="error">No Note Added</Div></td>
+        </tr>
+        <?php
+    }
+}
+
+?>
+
+
+
+           
+        </table>
+        <script src="./private/js/disable_features.js"></script>
+    </div>
+
+</div>
+</body>
+</html>
